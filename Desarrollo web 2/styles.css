@@ -1,0 +1,112 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+
+/* Personalización de la barra de navegación */
+.mi-navbar {
+  background-color: #ff69b4; /* rosa */
+}
+
+/* Espacios y color del body */
+body {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  color: rgb(var(--bs-tertiary-color-rgb));
+}
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  margin-bottom: 4rem;
+}
+
+/* Caption sobre la imagen */
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+/* Altura fija del carrusel y ajuste de imágenes */
+.carousel-item {
+  height: 32rem;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 32rem; /* coincide con la altura del .carousel-item */
+  object-fit: cover; /* mantiene proporción y rellena todo el contenedor */
+}
+
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+/* Espaciado de párrafos */
+.marketing .col-lg-4 p {
+  margin-right: .75rem;
+  margin-left: .75rem;
+}
+
+/* Imágenes de marketing más atractivas */
+.marketing .col-lg-4 img {
+  border-radius: 50%; /* ya lo tienes en HTML con rounded-circle */
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  transition: transform 0.3s;
+}
+
+.marketing .col-lg-4 img:hover {
+  transform: scale(1.05); /* efecto flotante al pasar el mouse */
+}
+
+
+/* Featurettes
+-------------------------------------------------- */
+
+.featurette-divider {
+  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+}
+
+.featurette-heading {
+  letter-spacing: -.05rem;
+}
+
+/* Imágenes featurette con borde y sombra */
+.featurette img {
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  transition: transform 0.3s;
+}
+
+.featurette img:hover {
+  transform: scale(1.03);
+}
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 40em) {
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 62em) {
+  .featurette-heading {
+    margin-top: 7rem;
+  }
+}
