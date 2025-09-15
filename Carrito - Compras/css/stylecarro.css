@@ -1,0 +1,61 @@
+:root {
+  --gradient-start: #1a2a6c;
+  --gradient-mid:   #b21f1f;
+  --gradient-end:   #fdbb2d;
+  --neon-color:     #00fff0;
+}
+
+body.bg-gradient {
+  background: linear-gradient(135deg, var(--gradient-start), var(--gradient-mid), var(--gradient-end));
+  min-height: 100vh;
+  color: #fff;
+  padding-top: 70px; /* para compensar navbar fija */
+}
+
+.nav-gradient {
+  background: linear-gradient(90deg, #0f2027, #203a43, #2c5364);
+}
+
+.footer-gradient {
+  background: linear-gradient(90deg, #2c5364, #203a43, #0f2027);
+}
+
+.neon-text {
+  color: var(--neon-color);
+  text-shadow: 0 0 5px var(--neon-color),
+               0 0 10px var(--neon-color),
+               0 0 20px var(--neon-color);
+}
+
+.card {
+  border: none;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  transition: transform .2s, box-shadow .2s;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+/* Animaciones carrito */
+.agregado {
+  background-color: rgba(0,255,128,0.2) !important;
+  color: #00ff9d !important;
+  animation: fade 1s ease-in-out;
+}
+.eliminado {
+  background-color: rgba(255,0,64,0.2) !important;
+  color: #ff4d6d !important;
+  animation: fade 1s ease-in-out;
+}
+@keyframes fade {
+  from { opacity: 0.3; }
+  to   { opacity: 1; }
+}
+
+#lista-carrito li {
+  background-color: rgba(255,255,255,0.1);
+  border: none;
+  color: #fff;
+}
